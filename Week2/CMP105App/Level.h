@@ -6,7 +6,7 @@
 #include <iostream>
 
 
-class Level{
+class Level {
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
 	~Level();
@@ -25,5 +25,10 @@ private:
 	Input* input;
 
 	// Add your object here
-
+	sf::Font font;
+	sf::Text text;
+	sf::Vector2f distance;
+	sf::CircleShape circle;
+	bool isDragging;
+	bool lastMousePress;
 };
